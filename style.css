@@ -457,6 +457,15 @@ footer p {
     .logo h2 {
         font-size: 26px;
     }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-label img {
+        width: 300px;
+    }
  
     .hero-text h3 {
         font-size: 28px;
@@ -484,7 +493,65 @@ footer p {
         padding: 30px 0;
         gap: 24px;
     }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
     .contact-left h2 {
         font-size: 1.6rem;
+    }
+
+     nav {
+        padding: 10px 20px;
+    }
+
+    .nav-links,
+    nav > .button {
+        display: none;
+    }
+ 
+    .hamburger-icon {
+        display: block;
+    }
+ 
+    .hero-section {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin: 100px 20px 40px;
+        height: auto;
+        gap: 30px;
+    }
+ 
+    .hero-text h3 {
+        font-size: 36px;
+    }
+ 
+    .hero-text h2 {
+        font-size: 22px;
+    }
+ 
+    .hero-text p {
+        font-size: 14px;
+    }
+ 
+    .hero-text p br {
+        display: none;
+    }
+ 
+    .hero-links {
+        justify-content: center;
+    }
+ 
+    .hero-image img {
+        width: 180px;
+        padding-top: 10px;
+    }
+
+    footer {
+        padding: 24px 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
     }
 }
