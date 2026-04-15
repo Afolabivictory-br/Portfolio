@@ -1,159 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | BrownDev</title>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="./src/assets/Brown.jpeg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Afolabi Victory - Web Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <nav>
-        <div class="logo">
-            <h2>Brown<span>.Dev</span></h2>
-        </div>
-        <div class="nav-links">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects-section">Projects</a></li>
-                <li><a href="#review">Review</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-        <div class="button">
-            <button>Hire Me</button>
-        </div>
-        <div class="hamburger-icon" id="hamburger">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-    </nav>
-
-
-    <div class="hero-section">
-        <div class="hero-text">
-            <h3>Hi, i'm <span>Afolabi <br> Victory</span></h3>
-            <h2>Full-Stack Web Developer</h2>
-            <p>I create modern web experiences
-                that are fast, responsive, and intuitive,
-                crafted with <br> attention to detail, performance, and usability.
-                I combine design and technology to build <br> impactful products
-                that solve real-world problems and deliver lasting value.</p>
-            <div class="hero-links">
-                <div class="button">
-                    <button>Contact Me</button>
-                </div>
-                <div class="cv-btn">
-                    <button>My CV</button>
-                </div>
-            </div>
-        </div>
-        <div class="hero-image">
-            <img src="/images/hero.jpeg" alt="Afolabi victory">
-        </div>
-    </div>
-
-
-    <section class="about" id="about">
-        <div class="section-label">
-            About Me
-            <img src="./images/about.jpg" alt="">
-        </div>
-        <div class="about-content">
-            <h2>Passionate about craft, obsessed with details.</h2>
-            <p>I'm a web developer with 1+ year of experience building beautiful, functional websites. I believe great web design is where aesthetics meet engineering — each project is a chance to solve a real problem beautifully.</p>
-            <p>When I'm not writing code, I'm exploring typography, studying product design, or contributing to open-source projects.</p>
-            <div class="skills-grid">
-                <div class="skill-tag">HTML & CSS</div>
-                <div class="skill-tag">JavaScript</div>
-                <div class="skill-tag">React</div>
-                <div class="skill-tag">Tailwind CSS</div>
-                <div class="skill-tag">Bootscrap</div>
-                <div class="skill-tag">REST APIs</div>
-                <div class="skill-tag">Responsive Design</div>
-                <div class="skill-tag">Python</div>
-                <div class="skill-tag">Django</div>
-            </div>
-        </div>
-    </section>
-
-    <div class="projects-section" id="projects-section">
-        <div class="section-label">
-            Projects
-        </div>
-        <div class="projects">
-            <div class="project">
-                <img src="images/elementor-placeholder-image.png" alt="">
-                <div class="project-text">
-                    <h2>Project 1 name</h2>
-                    <h3>About project</h3>
-                    <button>View</button>
-                </div>
-            </div>
-            <div class="project">
-                <img src="images/elementor-placeholder-image.png" alt="">
-                <div class="project-text">
-                    <h2>Project 2 name</h2>
-                    <h3>About project</h3>
-                    <button>View</button>
-                </div>
-            </div>
-            <div class="project">
-                <img src="images/elementor-placeholder-image.png" alt="">
-                <div class="project-text">
-                    <h2>Project 3 name</h2>
-                    <h3>About project</h3>
-                    <button>View</button>
-                </div>
-            </div>
-            <div class="project">
-                <img src="images/elementor-placeholder-image.png" alt="">
-                <div class="project-text">
-                    <h2>Project 4 name</h2>
-                    <h3>About project</h3>
-                    <button>View</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <section class="contact" id="contact">
-        <div class="contact-left">
-            <div class="section-label" style="margin-bottom:20px">Contact</div>
-                <h2>Let's build something <em>great</em> together.</h2>
-                <p>Have a project in mind, or just want to chat? I'm always open to interesting conversations and new opportunities.</p>
-            <div class="contact-links">
-                <div class="contact-item">ayomideafolabi1024@gmail.com</div>
-                <div class="contact-item">github.com/afolabivictory</div>
-                <div class="contact-item">linkedin.com/in/afolabivictory</div>
-            </div>
-        </div>
-        <form class="contact-form">
-            <div class="form-group">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" placeholder="enter your name" />
-            </div>
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" placeholder="youremail@email.com" />
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" placeholder="Tell me about your project..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" style="align-self:flex-start">Send Message</button>
-        </form>
-    </section>
-
-    <footer>
-        <span class="footer-logo">Afolabi Victory</span>
-        <p>© 2025 · Designed & built with care.</p>
-        <p>Open to freelance & full-time roles.</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

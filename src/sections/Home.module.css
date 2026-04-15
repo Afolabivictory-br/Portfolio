@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    min-height: 90vh;
+    align-items: center;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+    width: 100%;
+    gap: 15px;
+    animation: fadeSlide 0.8s ease-out;
+}
+
+.heroText h1 {
+    font-size: 50px;
+}
+
+.heroText h2 {
+    font-size: 30px;
+    color: rgb(66, 66, 66);
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    animation: typing 3s steps(24) forwards;
+}
+
+.heroText p {
+    font-size: 19px;
+    color: rgb(127, 127, 127);
+}
+
+.heroText span {
+    color: royalblue;
+    font-size: 60px;
+    display: inline-block;
+}
+
+/* IMAGE */
+.heroImg img {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 50%;
+    border-bottom: 25px solid rgb(66, 66, 66);
+    opacity: 0;
+    animation: fadeIn 3s ease forwards;
+}
+
+/* BUTTONS */
+.heroBtn {
+    display: flex;
+    gap: 10px;
+}
+
+#contact {
+    background: transparent;
+    padding: 5px 10px;
+    border: 2px solid purple;
+    border-radius: 10px;
+    color: purple;
+    transition: 0.6s ease-out;
+    cursor: pointer;
+}
+
+#contact:hover {
+    background-color: purple;
+    color: white;
+}
+
+#cv {
+    background: transparent;
+    padding: 5px 10px;
+    border: 2px solid green;
+    border-radius: 10px;
+    color: green;
+    transition: 0.6s ease;
+    cursor: pointer;
+}
+
+#cv:hover {
+    transform: scale(0.9);
+}
+
+/* ICONS */
+.heroIcon {
+    display: flex;
+    gap: 10px;
+}
+
+.heroIcon a {
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(66, 66, 66);
+    transition: 0.6s ease;
+}
+
+.heroIcon a:hover {
+    transform: scale(0.9);
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 52%;
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* ========================= */
+/* 📱 RESPONSIVENESS */
+/* ========================= */
+
+/* TABLET */
+@media (max-width: 1024px) {
+    .heroText h1 {
+        font-size: 40px;
+    }
+
+    .heroText h2 {
+        font-size: 24px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .heroText {
+        align-items: center;
+    }
+
+    .heroText h1 {
+        font-size: 32px;
+    }
+
+    .heroText h2 {
+        font-size: 20px;
+        border-right: none;
+        animation: none;
+        width: 100%;
+    }
+
+    .heroText span {
+        font-size: 40px;
+    }
+
+    .heroText p {
+        font-size: 16px;
+    }
+
+    .heroBtn {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .heroIcon {
+        justify-content: center;
+    }
+}
+
+/* SMALL PHONES */
+@media (max-width: 480px) {
+    .heroText h1 {
+        font-size: 26px;
+    }
+
+    .heroText span {
+        font-size: 32px;
+    }
+
+    .heroImg img {
+        max-width: 200px;
+    }
+}
