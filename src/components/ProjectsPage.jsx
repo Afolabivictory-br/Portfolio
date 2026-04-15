@@ -1,21 +1,31 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import styles from './ProjectsPage.module.css'; // Adjust path
+import styles from './ProjectsPage.module.css';
+import ProjectOne from '../assets/projectone.png'
+import ProjectTwo from '../assets/projecttwo.png'
+import ProjectThree from '../assets/projectthree.png'
 
 const projects = [
   {
     id: 1,
-    title: 'Personal Portfolio',
-    description: 'A portfolio website built with React, showcasing my skills and projects.',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqhOHbQKqZUEvHHRhOjtwAr2jHURO1SeJ8Jg&s',
-    link: 'https://your-portfolio.com',
+    title: 'Skin Care App',
+    description: 'A simple web app, built with HTML, CSS and JavaScript',
+    image: `${ProjectOne}`,
+    link: 'https://your-portfolio.co',
   },
   {
     id: 2,
     title: 'E-commerce App',
     description: 'An online store built with React, Redux, and Stripe for payments.',
-    image: 'https://pngimg.com/uploads/number2/Number%202%20PNG%20images%20free%20download_PNG14925.png',
-    link: 'https://your-ecommerce.com',
+    image: `${ProjectTwo}`,
+    link: 'https://your-ecommerce.co',
+  },
+  {
+    id: 3,
+    title: 'Travel Website',
+    description: 'An Website built with HTML and CSS.',
+    image:`${ProjectThree}` ,
+    link: 'https://your-ecommerce.co',
   },
 ];
 

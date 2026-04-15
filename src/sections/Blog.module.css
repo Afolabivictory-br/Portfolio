@@ -8,9 +8,10 @@
 
 .title {
   text-align: center;
-  font-size: 3rem;
+  font-size: 25px;
   margin-bottom: 50px;
   color: black;
+  text-transform: uppercase;
 }
 
 /* GRID */

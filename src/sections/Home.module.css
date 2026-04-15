@@ -137,11 +137,6 @@
     }
 }
 
-/* ========================= */
-/* 📱 RESPONSIVENESS */
-/* ========================= */
-
-/* TABLET */
 @media (max-width: 1024px) {
     .heroText h1 {
         font-size: 40px;
@@ -152,7 +147,6 @@
     }
 }
 
-/* MOBILE */
 @media (max-width: 768px) {
     .hero {
         flex-direction: column-reverse;

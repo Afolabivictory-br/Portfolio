@@ -12,7 +12,7 @@ const services = [
     id: 2,
     title: "Backend Development",
     description:
-      "I create secure and scalable backend systems using Node.js, Express, and databases like MongoDB and PostgreSQL.",
+      "I create secure and scalable backend systems using Python, Django, and databases like MongoDB and PostgreSQL.",
   },
   {
     id: 3,

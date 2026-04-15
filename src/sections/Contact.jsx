@@ -10,7 +10,6 @@ const Contact = () => {
       </p>
 
       <div className={styles.container}>
-        {/* FORM */}
         <form className={styles.form}>
           <input type="text" placeholder="Your Name" />
           <input type="email" placeholder="Your Email" />
@@ -20,17 +19,18 @@ const Contact = () => {
           <button type="submit">Send Message</button>
         </form>
 
-        {/* INFO */}
         <div className={styles.info}>
           <h3>Contact Info</h3>
-          <p>Email: yourmail@gmail.com</p>
-          <p>Phone: +234 XXX XXX XXXX</p>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ayomideafolabi1024@gmail.com" target="_blank" rel="noopener noreferrer">
+            Send me an email
+          </a>
+          <p>Phone: +234 802 667 2774</p>
           <p>Location: Abuja, Nigeria</p>
 
           <div className={styles.socials}>
-            <a href="#">GitHub</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">Twitter</a>
+            <a href="https://github.com/Afolabivictory-br" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/afolabi-victory-998b65345/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://wa.me/+2348026672774" target="_blank" rel="noopener noreferrer">WhatsApp</a>
           </div>
         </div>
       </div>

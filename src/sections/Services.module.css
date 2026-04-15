@@ -8,19 +8,18 @@
 
 .title {
   text-align: center;
-  font-size: 3rem;
+  font-size: 25px;
   margin-bottom: 50px;
   color: black;
+  text-transform: uppercase;
 }
 
-/* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
 }
 
-/* CARD */
 .card {
   background: rgb(25, 25, 25);
   padding: 25px;
@@ -44,11 +43,6 @@
   line-height: 1.6;
 }
 
-/* ========================= */
-/* 📱 RESPONSIVE */
-/* ========================= */
-
-/* Tablets */
 @media (max-width: 1024px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
@@ -59,7 +53,6 @@
   }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
   .services {
     padding: 60px 20px;
@@ -74,7 +67,6 @@
   }
 }
 
-/* Small phones */
 @media (max-width: 480px) {
   .card {
     padding: 20px;

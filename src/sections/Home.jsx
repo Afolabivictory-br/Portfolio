@@ -17,13 +17,15 @@ const Home = () => {
                 impactful products that solve real-world problems and deliver lasting value.
             </p>
             <div className={styles.heroBtn}>
-                <button id={styles.contact}>Contact Me</button>
+                <a href="#contact">
+                    <button id={styles.contact}>Contact Me</button>
+                </a>
                 <button id={styles.cv}>Download CV <i className="fa-solid fa-download"></i></button>
             </div>
             <div className={styles.heroIcon}>
-                <a href="https://www.linkedin.com/in/afolabi-victory-998b65345/"><i className="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/Afolabivictory-br"><i className="fa-brands fa-github"></i></a>
-                <a href="https://wa.me/+2348026672774"><i className="fa-brands fa-square-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/afolabi-victory-998b65345/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Afolabivictory-br" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"></i></a>
+                <a href="https://wa.me/+2348026672774" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-square-whatsapp"></i></a>
             </div>
         </div>
     </div>
