@@ -47,7 +47,9 @@ nav {
 }
 
 .navLinks a:hover {
-    color: black;
+    background-color: black;
+        padding:0 2px;
+        color: white;
 }
 
 .hambuger {
