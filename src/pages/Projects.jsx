@@ -1,6 +1,6 @@
 import React from 'react';
-import ProjectCard from './ProjectCard';
-import styles from './ProjectsPage.module.css';
+import ProjectCard from '../components/ProjectCard';
+import styles from './Projects.module.css';
 import ProjectOne from '../assets/projectone.png'
 import ProjectTwo from '../assets/projecttwo.png'
 import ProjectThree from '../assets/projectthree.png'
@@ -29,7 +29,7 @@ const projects = [
   },
 ];
 
-const ProjectsPage = () => {
+const Projects = () => {
   return (
     <section className={styles.projects} id='projects'>
       <h1 className={styles.pageTitle}>My Projects</h1>
@@ -42,4 +42,4 @@ const ProjectsPage = () => {
   );
 };
 
-export default ProjectsPage;
+export default Projects;

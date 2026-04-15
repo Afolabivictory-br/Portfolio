@@ -1,12 +1,12 @@
 import React from 'react'
 import NavBar from './components/NavBar'
-import Home from './sections/Home'
-import About from './sections/About'
-import Services from './sections/Services'
-import Blog from './sections/Blog'
-import Contact from './sections/Contact'
+import Home from './pages/Home'
+import About from './pages/About'
+import Services from './pages/Services'
+import Blog from './pages/Blog'
+import Contact from './pages/Contact'
 import Footer from './components/Footer'
-import ProjectsPage from './components/ProjectsPage';
+import Projects from './pages/Projects';
 
 const App = () => {
   return (
@@ -15,7 +15,7 @@ const App = () => {
         <Home />
         <About />
         <Services />
-        <ProjectsPage />
+        <Projects />
         <Blog />
         <Contact />
         <Footer />
