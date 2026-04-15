@@ -61,8 +61,8 @@ nav {
     .navLinks {
         position: absolute;
         top: 60px;
-        left: 0;
-        width: 100%;
+        left: 50%;
+        width: 50%;
         background: white;
         display: none;
         flex-direction: column;
@@ -78,6 +78,12 @@ nav {
     .navLinks ul {
         flex-direction: column;
         gap: 20px;
+    }
+
+    .navLinks a:hover {
+        background-color: black;
+        padding:0 60px;
+        color: white;
     }
 
     .hambuger {
