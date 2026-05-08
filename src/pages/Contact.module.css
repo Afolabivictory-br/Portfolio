@@ -1,0 +1,113 @@
+.contact {
+  min-height: 50vh;
+  padding: 80px;
+}
+
+.title {
+  font-size: 40px;
+  color: royalblue;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  margin-bottom: 40px;
+}
+
+/* LAYOUT */
+.container {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+/* INFO SIDE */
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.box {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 20px;
+  border-radius: 12px;
+
+  border: 1px solid rgb(0, 18, 73);
+}
+
+.box svg {
+  color: royalblue;
+  font-size: 20px;
+}
+
+.box h4 {
+  margin: 0;
+}
+
+.box p {
+  margin: 5px 0 0;
+}
+
+/* FORM */
+.form {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form input,
+.form textarea {
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+
+  background: transparent;
+  color: grey;
+
+  outline: none;
+  border: 1px solid rgb(0, 18, 73);
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: royalblue;
+}
+
+/* BUTTON */
+.form button {
+  padding: 15px;
+  background: royalblue;
+  border: none;
+  border-radius: 10px;
+
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.form button:hover {
+  transform: translateY(-5px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  form {
+    width: 300px;
+  }
+}

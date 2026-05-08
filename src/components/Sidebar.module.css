@@ -1,0 +1,190 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  transition: 0.4s ease;
+  border-right: 1px solid royalblue;
+  background: rgb(0, 18, 73);
+}
+
+body {
+  background-color: #111;
+}
+
+.logo img {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid royalblue;
+}
+
+.light .active {
+  background-color: rgb(117, 152, 255);
+}
+.logo {
+  margin-bottom: 20px;
+}
+
+.light{
+  background-color: white;
+  color: #111;
+}
+.dark{
+  background-color: #111;
+  color: white;
+}
+
+.light a {
+  color: #111;
+}
+.dark a {
+  color: white;
+}
+
+.navLinks {
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.navLinks li a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.navLinks li a:hover {
+  color: royalblue;
+  transform: translateX(5px);
+}
+
+.themeToggle {
+  font-size: 25px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.6s ease;
+  color: royalblue;
+}
+
+/* MAIN CONTENT SHOULD MOVE */
+.mainContent {
+  margin-left: 250px;
+  padding: 40px;
+}
+
+/* MOBILE MENU BUTTON */
+.menuBtn {
+  display: none;
+
+  position: fixed;
+  top: 20px;
+  left: 20px;
+
+  background: #111;
+  color: white;
+
+  width: 45px;
+  height: 45px;
+
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 1000;
+  cursor: pointer;
+}
+
+/* CLOSE BUTTON */
+.closeBtn {
+  display: none;
+}
+
+.socials {
+  margin-top: auto;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.socials a {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  background: #1e1e1e;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  text-decoration: none;
+
+  transition: 0.3s ease;
+}
+
+.socials a:hover {
+  background: royalblue;
+  transform: translateY(-5px);
+}
+
+.active {
+  background: rgb(83, 98, 140);
+  color: royalblue;
+  border-left: 3px solid royalblue;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  .sidebar {
+    left: -100%;
+    width: 250px;
+    background: rgb(0, 18, 73);
+  }
+
+  /* OPEN SIDEBAR */
+  .sidebar.active {
+    left: 0;
+  }
+
+  .menuBtn {
+    display: flex;
+  }
+
+  .closeBtn {
+    display: block;
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .mainContent {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
